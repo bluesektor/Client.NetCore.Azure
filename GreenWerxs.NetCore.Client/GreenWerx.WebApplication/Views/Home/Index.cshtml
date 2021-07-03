@@ -1,0 +1,26 @@
+﻿ 
+@model List<GreenWerx.WebApplication.Models.ProductViewModel>
+ 
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>
+                   @product.Name
+                </td>
+                <td></td>
+            </tr>
+         }
+    </tbody>
+</table>
